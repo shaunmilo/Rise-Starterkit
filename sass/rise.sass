@@ -1,0 +1,157 @@
+*, *:after, *:before
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+// Font imports
+
+@font-face
+	font-family: "OS-light"
+	src: url(../fonts/open-sans/OpenSans-Light.ttf)
+
+// Global Colors
+
+$offwhite: #fafafa
+$darkgray: #4C4C4C
+$orange: #f1c600
+$cheese: #F2C03D
+
+// HTML Elements
+
+body
+	background: $offwhite
+	font: 14px "OS-light"
+	color: $darkgray
+	margin: 0
+	padding: 0
+
+nav
+	li
+		display: inline-block
+	a:link, a:active, a:visited
+		color: $cheese
+		text-decoration: none
+		font-size: 18px
+		border-radius: 30px
+		padding: 10px 18px
+		-webkit-transition: .1s ease
+		-moz-transition: .1s ease
+		-o-transition: .1s ease
+		&:hover
+			background: $cheese
+			color: white
+
+p
+	margin: 1em 0
+	line-height: 1.5
+	display: inline-block
+
+header
+	position: fixed
+	z-index: 100
+	display: inline-block
+	background: $offwhite
+	width: 100%
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5)
+
+footer
+	background: $darkgray
+	color: $offwhite
+	height: auto
+	padding: 2em 0
+	text-align: center
+	position: relative
+	font-size: 18px
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5)
+
+a:link, a:active, a:visited
+	color: $cheese
+	text-decoration: none
+
+
+// Universal CSS classes
+
+.container
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+
+.gutter
+	padding-left: 1em
+	padding-right: 1em
+	display: inline-block
+
+a.button
+	padding: 10px 20px
+	border-radius: 5px
+	background: transparent
+	border: 2px solid #fff
+	text-decoration: none
+	color: #fff
+	margin: 1em 0
+	display: inline-block
+	&:hover
+		border: 2px solid $orange
+		color: $cheese
+
+// All other styles
+
+.logo
+	span
+		font-size: 30px
+
+.info-section
+	padding: 2.5em 0
+	display: inline-block
+
+.info-box
+	background: white
+	box-shadow: 2px 2px 5px #ccc
+	display: inline-block
+	padding: 1em
+
+.hero
+	background: url(../img/layout/banner-1.jpg) no-repeat center fixed
+	background-position: 0 -40px
+	width: 100%
+	padding: 12em 0
+	color: white
+	text-align: center
+	text-shadow: 1px 1px 1px #000
+	display: inline-block
+	position: relative
+
+.sidekick
+	background: url(../img/layout/sidekick-bg-1.jpg) no-repeat center fixed
+	padding: 5em 0
+	width: 100%
+	color: white
+	text-align: center
+	display: inline-block
+	position: relative
+	text-shadow: 1px 1px 1px #000
+	font-size: 18px
+	position: relative
+	.button
+		font-size: 18px
+
+.social
+	a:link, a:active, a:visited
+		background: #252525
+		padding: 15px 20px 10px
+		margin: 0 10px
+		display: inline-block
+	img
+		width: 28px
+		height: 28px
+	a.facebook
+		&:hover
+			background: #3b5998
+	a.twitter
+		&:hover
+			background: #4099ff
+	a.linkedin
+		&:hover
+			background: #2286ba
