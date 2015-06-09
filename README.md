@@ -17,7 +17,7 @@ Used to contain informative content blurbs.
 The main top banner/hero image.
 
 <h3>.sidekick</h3>
-The second, less powerful banner section. ;)
+The second, less powerful inner page banner section.
 
 <h3>.button</h3>
 Button styling to be used throughout.
